@@ -250,7 +250,6 @@ class FrameAnimationApp(QMainWindow):
 
             last_frame_id = self.data_base.get_last_frame_id(self.current_directory)
 
-            # Получаем кадры из базы данных и преобразуем их в MP4
             for i in range(1, last_frame_id + 1):
                 frame_data_base64 = self.data_base.get_frame(self.current_directory, i)
                 if frame_data_base64 is not None:
@@ -267,7 +266,6 @@ class FrameAnimationApp(QMainWindow):
             out.release()
             self.frame_list.setText(f"MP4 создан с именем {output_filename}")
 
-            # Открываем папку с файлом
             os.startfile(project_folder)
 
         except Exception as e:
