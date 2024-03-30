@@ -42,6 +42,6 @@ class DAO:
         if result:
             frame_data_base64 = result[0]
             frame_data = base64.b64decode(frame_data_base64)
-            print(f"Frame data for frame {frame_id}: {frame_data[:100]}")  # Print the first 100 bytes of the frame data
+            print(f"Frame data for frame {frame_id}: {frame_data[:100]}")
             return frame_data
         return None
