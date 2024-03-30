@@ -31,7 +31,9 @@ pip install PyQt5 opencv-python
 ```
 3. Run the application:
 
+```bash
 python app.py
+```
 
 ## Usage
 
