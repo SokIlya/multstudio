@@ -233,14 +233,10 @@ class FrameAnimationApp(QMainWindow):
     def create_frame(self):
         ret, frame = self.cap.read()
         if ret:
-            # Конвертируем в RGB
             rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            # Кодируем в base64
             _, buffer = cv2.imencode('.jpg', rgb_frame)
             frame_data = base64.b64encode(buffer)
-            # Сохраняем в базу
             self.data_base.save_frame(self.current_directory, frame_data)
-            # Обновляем кадры в интерфейсе
             self.update_frame_list()
 
     def create_mp4(self):
