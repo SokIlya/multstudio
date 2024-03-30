@@ -7,11 +7,11 @@ MultStudio is a simple, lightweight, and absolutely free animation creation appl
 
 ## Features
 
-- Real-time frame capture from a webcam.
-- Saving captured frames within a project.
-- Deleting individual frames or all frames of a project.
-- Adjusting the frames per second (FPS) for video export.
-- Exporting animation as an MP4 file.
+- Real-time frame capture from a webcam
+- Saving captured frames within a project
+- Deleting individual frames or all frames of a project
+- Adjusting the frames per second (FPS) for video export
+- Exporting animation as an MP4 file
 
 ## User inteface
 
