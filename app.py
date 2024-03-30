@@ -161,7 +161,6 @@ class FrameAnimationApp(QMainWindow):
                 frame_data = base64.b64decode(frame_data_base64)
                 frame_image = QImage.fromData(frame_data, "JPG")
                 if frame_image.isNull():
-                    # print(f"Failed to load frame {i}")  # debug
                     continue
 
                 frame_widget = QWidget()
@@ -180,9 +179,7 @@ class FrameAnimationApp(QMainWindow):
                 list_item.setSizeHint(frame_widget.sizeHint())
                 self.frame_list_widget.addItem(list_item)
                 self.frame_list_widget.setItemWidget(list_item, frame_widget)
-                # print(f"Frame {i} added to list")  # debug
-            # else:
-            # print(f"No data for frame {i}")  # debug
+
 
     def find_camera_index(self):
         max_tested = 10
