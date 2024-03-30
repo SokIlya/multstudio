@@ -180,7 +180,6 @@ class FrameAnimationApp(QMainWindow):
                 self.frame_list_widget.addItem(list_item)
                 self.frame_list_widget.setItemWidget(list_item, frame_widget)
 
-
     def find_camera_index(self):
         max_tested = 10
         for index in range(max_tested):
