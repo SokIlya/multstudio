@@ -281,7 +281,6 @@ class FrameAnimationApp(QMainWindow):
             print(f"An error occurred: {e}")
 
 
-# Подключение стилей
 def load_stylesheet(file_path):
     with open(file_path, "r") as file:
         return file.read()
